@@ -6,7 +6,7 @@
 *Return: The absolute value*
 */
 int _abs(int d)
-
+{
 	if (d >= 0)
 		return (t);
 	else
