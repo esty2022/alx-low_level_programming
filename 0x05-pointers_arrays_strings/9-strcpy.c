@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
 *_strcpy - copies
@@ -7,7 +6,7 @@
 *@src: source
 *Return: string
 */
-char *_strpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int len = 0;
 
