@@ -1,20 +1,23 @@
 #include "main.h"
 
 /**
-*puts2 - prints one character out of two
-*@str: input
-*Return: print
+*rev_string - reverses a string
+*@s: input
+*Return: string in reverse
 */
-void puts2(char *str)
+void rev_string(char *s)
 {
-	int i = 0;
+	char rv = s[0];
+	int c = 0;
+	int i;
 
-	for (; str[i] != '\0'; i++)
+	while (s[c] != '\0')
+		c++;
+	for (i = 0; i < c; i++)
 	{
-		if ((i % 2) == 0)
-			_putchar(str[i]);
-		else
-			continue;
+		c--;
+		rv = s[i];
+		s[i] = s[c];
+		s[c] = rv;
 	}
-	_putchar('\n');
 }
