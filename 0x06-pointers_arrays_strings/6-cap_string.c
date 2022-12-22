@@ -5,10 +5,9 @@
 * @str: The string to be capitalized.
 * Return: A pointer to the changed string.
 */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 int index = 0;
-char *str;
 
 while (str[index])
 {
@@ -31,6 +30,5 @@ index == 0)
 str[index] -= 32;
 index++;
 }
-
 return (str);
 }
