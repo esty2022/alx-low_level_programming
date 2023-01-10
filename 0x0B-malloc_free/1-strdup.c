@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 /**
-* _strdup - Duplicate a string
+*_strdup - Duplicate a string
 * @str: the string to duplicate
 * Return: the string duplicated
 */
@@ -16,7 +15,7 @@ while (str[i])
 {
 i++;
 }
-s = malloc((sizeof(char) * i));
+s = malloc(1 + (sizeof(char) * i));
 if (s == NULL)
 return (NULL);
 while (a < i)
